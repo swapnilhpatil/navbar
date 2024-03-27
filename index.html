@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responssive navbar</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+       <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="assets/close_FILL0_wght400_GRAD0_opsz24.png"/></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Forum</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Coding2Go</a></li>
+            <li class="hideOnMobie"><a href="#">Home</a></li>
+            <li class="hideOnMobie"><a href="#">About us</a></li>
+            <li class="hideOnMobie"><a href="#">Blog</a></li>
+            <li class="hideOnMobie"><a href="#">Contact</a></li>
+            <li class="hideOnMobie"><a href="#">Forum</a></li>
+            <li class="showOnMobie"onclick=showsidebar()><a href="#"><img src="assets/menu_FILL0_wght400_GRAD0_opsz24.png"></a></li>
+        </ul>
+       </nav>
+       <script>
+        function showsidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+       </script>
+    </body>
+</html>
+
